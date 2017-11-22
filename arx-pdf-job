@@ -1,0 +1,6 @@
+#!/bin/sh
+# run arxiv image retrieval script
+echo "starting pdf arx job: $(date)" >> /tmp/arx-log.log
+cd /home/rlee/arxiv_rss
+python /home/rlee/arxiv_rss/arxiv_rss.py
+echo "end pdf arx job: $(date)" >> /tmp/arx-log.log
